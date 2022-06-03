@@ -1,0 +1,29 @@
+@model Book
+@{
+    ViewData["Title"]="Book";
+}
+
+<div class="container">
+    <div class="row mx-auto mt-5">
+        <img src="~/images/homebook.jpeg" class="img-fluid col" style="max-height: 300px; max-width:400px;" alt="">
+        <div class="text ml-2  text-dark col" >
+            <h3 class="text mb-3">@Model.title</h3>
+            <small class="text-primary"> By @Model.author </small>
+            <br>
+            <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat laboriosam, adipisci in neque rerum facere vitae sequi repudiandae vero nulla debitis tempora expedita, reiciendis ipsa distinctio iste voluptate fuga?</span>
+           <br>
+            <button class="btn btn-outline-primary m-2">Read Now</button>
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>cartegory - </b> Nature</li>
+                    <li class="list-group-item"><b>Pages - </b> 600</li>
+                    <li class="list-group-item"><b>Languge - </b> Spanish</li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+    
+
+</div>

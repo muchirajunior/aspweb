@@ -1,0 +1,64 @@
+@{
+    ViewData["Title"]="BOOKS";
+}
+
+<div class="container w-100">
+    <div class="card bg-dark">
+        <p class="text-light text-center p-3 h2"> Hello this card is on books page ! </p>
+        <br>
+        <span class="text-center text-light" > @DateTime.Now  </span>
+        @{
+            int a=20;
+        }
+        <span class="m-2 text-light">@a</span> <span class="m-2 text-light">Twitter handle @@muchirajunior</span>
+    </div>
+
+</div>
+
+<div class="container mt-5">
+    <div class="card mx-auto bg-success text-light text-center p-3">
+        <h2>This is razor conditional statements card</h2>
+        <br>
+        @{
+            int number =30;
+        }
+        @if(number<20){
+            <p>The number is smaller @number</p>
+        }else{
+           <p>The number is bigger @number</p> 
+        }
+        <!-- a ternary operation-->
+        @(number==20 ? number++ : number--)
+    </div>
+
+    <div class="container mt-5">
+        <div class="card float-end bg-danger text-light p-3">
+            <h2 class="text-center"> Custom for loop in Razor </h2>
+            @for(int i=0;i<4; i++){
+                <span>Item number @i</span>
+            }
+            <br> <br>
+            <h2 class="text-center">Custom foreach loop in Razor</h2>
+            @{
+                List<string> names=new List<string>(){"John","Junior","Martha","Alex"};
+            }
+            @foreach (var name in names)
+            {
+                <span>Learner number @(names.IndexOf(name)+1) is @name</span>
+            }
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img src="images/mcuapp.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+         </div>
+    </div>
+
+
+</div>
