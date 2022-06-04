@@ -4,9 +4,11 @@
 
 <div class="container w-100">
     <div class="card bg-dark">
-        <p class="text-light text-center p-3 h2"> Hello this card is on books page ! </p>
+        <p class="text-light text-center p-3 h2"> Hello @ViewBag.Name this card is on books page ! </p>
         <br>
         <span class="text-center text-light" > @DateTime.Now  </span>
+        <br>
+        <span class="text-center text-white">  a sample viewbag book @ViewBag.Book.title by @ViewBag.Book.author </span>
         @{
             int a=20;
         }

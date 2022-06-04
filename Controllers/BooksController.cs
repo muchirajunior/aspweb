@@ -8,7 +8,11 @@ namespace helloweb.Controllers
     public class BooksController : Controller{
         private readonly BookService _bookService=new BookService();
 
-        public ViewResult Index()=>View();
+        public ViewResult Index(){
+          ViewBag.Book=_bookService.GetBookById(1);
+          ViewBag.Name="Junior";
+          return View();
+        }
         public  IActionResult GetAllBooks(){
           var data= _bookService.GetAllBooks();
           return View(data);
