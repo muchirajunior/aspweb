@@ -1,2 +1,2 @@
-# sample of a ASP.NET MVC application
+# A sample  ASP.NET MVC application
 A learning project
