@@ -1,11 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-<<<<<<< HEAD
-    <TargetFramework>net5.0</TargetFramework>
-=======
     <TargetFramework>netcoreapp3.1</TargetFramework>
->>>>>>> f572da0 (set :tada:)
   </PropertyGroup>
 
 </Project>
