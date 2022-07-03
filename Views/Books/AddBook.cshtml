@@ -1,0 +1,21 @@
+@model Book
+
+<form class="card p-3 m-3 " method="post" action="">
+    <div class="mb-3">
+        <label asp-for="title" class="form-label">Title</label>
+        <input type="text" asp-for="title" class="form-control" id="" required  placeholder="title">
+    </div>
+     <div class="mb-3">
+        <label for="" class="form-label">Author</label>
+        <input type="text" asp-for="author" class="form-control" id="" required placeholder="John Doe">
+    </div>
+     <div class="mb-3">
+        <label for="" class="form-label">Pages</label>
+        <input type="number" asp-for="pages" class="form-control" id="" required placeholder="500">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+        <textarea asp-for="description" class="form-control" required id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary w-75 m-3 mx-auto">ADD BOOK</button>
+</form>
