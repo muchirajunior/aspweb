@@ -5,7 +5,7 @@ namespace helloweb.Models{
         public string title { get; set; }
         public string  author { get; set; }
         public string  description { get; set; }
-        public string  cartegory { get; set; }
+        public string  language { get; set; }
         public int pages { get; set; }
 
     }

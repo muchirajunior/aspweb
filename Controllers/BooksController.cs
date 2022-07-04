@@ -32,7 +32,7 @@ namespace helloweb.Controllers
           {
               Console.WriteLine($"Title {book.title} \nAuthor {book.author} \npages {book.pages} \ndescription: {book.description}");
               await _bookService.AddBook(book);
-              return View();
+              return Redirect("GetAllBooks");
           }
           
     }  
