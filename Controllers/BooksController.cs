@@ -11,8 +11,8 @@ namespace helloweb.Controllers
 
         public BooksController(IBookService bookService){_bookService=bookService;}
 
-        public ViewResult Index(){
-          ViewBag.Book=_bookService.GetBookById(1);
+        public async Task<IActionResult>  Index(){
+          ViewBag.Book= await _bookService.GetBookById(1);
           ViewBag.Name="Junior";
           return View();
         }
@@ -22,7 +22,7 @@ namespace helloweb.Controllers
         }
         public async Task<IActionResult>  GetBook(int id){  
             var book=await _bookService.GetBookById(id);
-            
+
             return View(book);
           }
           public IActionResult AddBook()=> View();
