@@ -2,11 +2,11 @@
 @{
     ViewData["Title"]="All Books";
 }
-<div class="container">
-    <div class="row ">
+<div class="container ">
+    <div class="row mx-auto">
         @foreach (var book in Model)
         {
-           <div class="card m-2" style="width: 18rem;">
+           <div class="card m-2  " style="width: 18rem;">
                 <img src="~/images/book.jpeg" class="card-img-top" alt="">
                 <div class="card-body">
                     <h4 class="card-title">@book.title</h4>

@@ -5,9 +5,9 @@ using helloweb.Models;
 namespace helloweb.Services{
       public interface IBookService
     {
-        Task<List<Book>> GetAllBooks();
-        Task<Book> GetBookById(int id);
-        Task AddBook(Book book);
+        List<Book> GetAllBooks();
+        Book GetBookById(int id);
+        void AddBook(Book book);
     }
 
 }

@@ -12,18 +12,18 @@ namespace helloweb.Services
         private readonly DatabaseContext _context;
         public BookService(DatabaseContext databaseContext){_context=databaseContext;}
 
-        public async Task<List<Book>> GetAllBooks() {
-            var books= await _context.books.ToListAsync();
+        public List<Book> GetAllBooks() {
+            var AllBooks=  _context.books.ToList();
 
-            return books;
+            return AllBooks;
 
         }
 
-        public async Task<Book> GetBookById(int id) => await _context.books.Where(book => book.id == id).FirstOrDefaultAsync();
+        public  Book GetBookById(int id) =>  _context.books.Where(book => book.id == id).FirstOrDefault();
 
-        public async Task AddBook(Book book){
-            await _context.books.AddAsync(book);
-            await _context.SaveChangesAsync();
+        public  void AddBook(Book book){
+             _context.books.Add(book);
+             _context.SaveChanges();
         } 
     }
 }
