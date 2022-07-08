@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace helloweb.Models{
-    class User{
+    public class User{
         [Key]
         public int id { get; set; }
         [MaxLength(50)]

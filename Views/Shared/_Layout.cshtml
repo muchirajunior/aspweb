@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white  box-shadow mb-3 mt-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white  box-shadow mb-3 mt-1">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">helloweb</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -34,7 +34,8 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="AddBook">Add Book</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn bg-light opacity-25 ">login here</a>
+                    <a asp-action="Register" asp-controller="User" class="btn btn-outline-success m-2" >create account</a>
+                    <a asp-controller="User" asp-action="Login" class="btn btn-primary m-2">login here</a>
                 </div>
             </div>
         </nav>
