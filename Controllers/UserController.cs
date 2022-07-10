@@ -7,12 +7,12 @@ namespace aspweb.Controllers
 {
     public class UserController : Controller
     {
-        private readonly IUserService _userService;
+        // private readonly IUserService _userService;
 
-        public UserController(IUserService userService)
-        {
-            _userService = userService;
-        }
+        // public UserController(IUserService userService)
+        // {
+        //     _userService = userService;
+        // }
 
         public IActionResult Index()
         {
@@ -28,7 +28,7 @@ namespace aspweb.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterUser user)
         {
-           await  _userService.CreateUser(user);
+        //    await  _userService.CreateUser(user);
             
             return View();
         }
