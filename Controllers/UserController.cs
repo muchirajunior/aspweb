@@ -26,7 +26,7 @@ namespace aspweb.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Register(RegisterUser user)
+        public IActionResult Register(RegisterUser user)
         {
         //    await  _userService.CreateUser(user);
             
